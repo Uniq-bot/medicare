@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MyWebsite</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="profile-page">
+    <aside id="sidebar">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+    
+    <main>
+        <div id="profileContent">
+           
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i data-lucide="user-circle"></i>
+                    </div>
+                    <h2 id="userName">User Name</h2>
+                    <p id="userEmail">user@example.com</p>
+                </div>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <i data-lucide="mail"></i>
+                        <div>
+                            <label>Email</label>
+                            <span id="displayEmail">user@example.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="calendar"></i>
+                        <div>
+                            <label>Member Since</label>
+                            <span id="memberSince">January 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="logout-btn" onclick="logout()">
+                    <i data-lucide="log-out"></i>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="../Script/navbar.js"></script>
+<script src="../Script/profile.js"></script>
+</html>

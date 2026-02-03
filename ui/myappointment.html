@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointment - MyWebsite</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <aside id="sidebar">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+    
+    <main>
+        <div class="appointments-page">
+            <div class="page-header">
+                <h1>My Appointments</h1>
+                <a href="doctors.html" class="new-appointment-btn">
+                    <i data-lucide="plus"></i>
+                    <span>Book New Appointment</span>
+                </a>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <i data-lucide="calendar"></i>
+                    <div>
+                        <h3 id="totalCount">0</h3>
+                        <p>Total Appointments</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="calendar-check"></i>
+                    <div>
+                        <h3 id="upcomingCount">0</h3>
+                        <p>Upcoming</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="check-circle-2"></i>
+                    <div>
+                        <h3 id="completedCount">0</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="appointmentsContainer" class="appointments-container">
+                <!-- Appointments will be loaded here -->
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="../Script/navbar.js"></script>
+<script src="../Script/myappointment.js"></script>
+</html>

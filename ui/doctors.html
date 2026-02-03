@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - MyWebsite</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <aside id="sidebar">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+    
+    <main>
+        <div class="doctors-header">
+            <h1>Our Doctors</h1>
+            <p>Find and book appointments with our experienced medical professionals</p>
+        </div>
+        
+        <div class="doctors-controls">
+            <div class="search-box">
+               
+                <input type="text" id="searchDoctor" placeholder="Search by name, specialty, or facility...">
+            </div>
+            <div class="filter-box">
+                
+                <select id="specialtyFilter">
+                    <option value="all">All Specialties</option>
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="orthopedic">Orthopedic</option>
+                    <option value="pediatrician">Pediatrician</option>
+                    <option value="neurologist">Neurologist</option>
+                    <option value="dermatologist">Dermatologist</option>
+                    <option value="surgeon">Surgeon</option>
+                    <option value="gynecologist">Gynecologist</option>
+                    <option value="ophthalmologist">Ophthalmologist</option>
+                    <option value="psychiatrist">Psychiatrist</option>
+                    <option value="dentist">Dentist</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="doctorsGrid" class="doctors-grid">
+            <!-- Doctors will be loaded here by JavaScript -->
+        </div>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="../Script/navbar.js"></script>
+<script src="../Script/doctors.js"></script>
+</html>

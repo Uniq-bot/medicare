@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - MyWebsite</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <aside id="sidebar">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+    
+    <main>
+        <div class="schedule-container">
+            <h1>Schedule Appointment</h1>
+            
+            <div id="doctorInfo" class="doctor-info-section">
+                <!-- Doctor info will be loaded here -->
+            </div>
+            
+            <div id="scheduleSection" class="schedule-section">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button onclick="prevMonth()" class="nav-btn">
+                            <i data-lucide="chevron-left"></i>
+                        </button>
+                        <h2 id="currentMonth"></h2>
+                        <button onclick="nextMonth()" class="nav-btn">
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    
+                    <div id="calendarGrid" class="calendar-grid">
+                        <!-- Calendar days will be loaded here -->
+                    </div>
+                </div>
+                
+                <div id="timeSlots" class="time-slots-container">
+                    <p class="select-date-msg">Please select a date first</p>
+                </div>
+                
+                <button id="confirmBtn" class="confirm-btn" onclick="confirmAppointment()" disabled>
+                    <i data-lucide="check-circle"></i>
+                    <span>Confirm Appointment</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="../Script/navbar.js"></script>
+<script src="../Script/schedule.js"></script>
+</html>

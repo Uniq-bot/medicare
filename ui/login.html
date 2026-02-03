@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MediCare</title>
+    <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1>MediCare</h1>
+                <p>Welcome back! Please login to your account.</p>
+            </div>
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-with-icon">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <!-- <a href="#" class="forgot-password">Forgot password?</a> -->
+                </div>
+                <button type="submit" class="login-btn">
+                    <span>Login</span>
+                    <i data-lucide="arrow-right"></i>
+                </button>
+            </form>
+            <!-- <div class="login-footer">
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div> -->
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+        
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Clear all previous localStorage data for fresh login
+            localStorage.clear();
+            
+            // Store new user data (in real app, validate with backend first)
+            const userData = {
+                email: email,
+                name: email.split('@')[0],
+                loggedIn: true,
+                loginTime: new Date().toISOString()
+            };
+            
+            localStorage.setItem('user', JSON.stringify(userData));
+            
+            // Redirect to dashboard
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

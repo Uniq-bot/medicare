@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MyWebsite</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <aside id="sidebar">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+    
+    <main>
+        <div class="dashboard-container">
+            <!-- Welcome Section -->
+            <div id="welcomeSection" class="welcome-section">
+                <!-- Content loaded by JS -->
+            </div>
+            
+            <!-- Statistics Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #e8f5e9;">
+                        <i data-lucide="calendar-check" style="color: #4CAF50;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="upcomingCount">0</h3>
+                        <p>Upcoming</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #e3f2fd;">
+                        <i data-lucide="check-circle-2" style="color: #2196F3;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="completedCount">0</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #fff3e0;">
+                        <i data-lucide="calendar" style="color: #FF9800;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="totalCount">0</h3>
+                        <p>Total</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #f3e5f5;">
+                        <i data-lucide="clock" style="color: #9C27B0;"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="nextAppt">None</h3>
+                        <p>Next Appointment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content Grid -->
+            <div class="dashboard-grid">
+                <!-- Upcoming Appointments -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i data-lucide="calendar-days"></i> Upcoming Appointments</h2>
+                        <a href="myappointment.html" class="view-all">View All</a>
+                    </div>
+                    <div id="upcomingAppointments" class="upcoming-list">
+                        <!-- Content loaded by JS -->
+                    </div>
+                </div>
+                
+                <!-- Recent Activity -->
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i data-lucide="activity"></i> Recent Activity</h2>
+                    </div>
+                    <div id="recentActivity" class="activity-list">
+                        <!-- Content loaded by JS -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="dashboard-section">
+                <div class="section-header">
+                    <h2><i data-lucide="zap"></i> Quick Actions</h2>
+                </div>
+                <div id="quickActions" class="quick-actions-grid">
+                    <!-- Content loaded by JS -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="../Script/navbar.js"></script>
+<script src="../Script/dashboard.js"></script>
+</html>
