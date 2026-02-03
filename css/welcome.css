@@ -1,6 +1,6 @@
 /* Welcome page specific styles */
 .welcome-body {
-    background: #121212;
+    background: rgb(225, 221, 221);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     transition: margin-left 0.3s ease;
 }
 
@@ -44,19 +44,15 @@
     font-weight: 700;
     color: #4CAF50;
     margin-bottom: 0.75rem;
-    cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.brand-logo:hover {
-    color: #66bb6a;
-}
 
 .brand-tagline {
     font-size: 0.95rem;
-    color: #9aa19a; /* was too light */
+    color: #383737; /* was too light */
 }
 
 /* Hero */
@@ -74,7 +70,7 @@
 
 .hero-section p {
     font-size: 0.95rem;
-    color: #b0b0b0; /* fixed */
+    color: #666363; /* fixed */
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;

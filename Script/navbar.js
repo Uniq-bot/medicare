@@ -3,7 +3,7 @@ const sidebar = document.getElementById('sidebar');
 sidebar.innerHTML = `
     <div class="sidebar-header">
         <h2>
-        <a class="sidebar-link" href="index.html" id="medicareLink">MediCare</a>
+        <a class="sidebar-link" href="../index.html" id="medicareLink">MediCare</a>
         </h2>
     </div>
     <nav class="sidebar-nav">
