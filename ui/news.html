@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events - MediCare</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="sidebar"></div>
+
+    <main class="news-main">
+        <div class="news-container">
+            <div class="hero-banner">
+                <h1>News & Events</h1>
+                <p>Stay updated with the latest from MediCare</p>
+            </div>
+
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-tab="all">All Updates</button>
+                <button class="tab-btn" data-tab="news">Hospital News</button>
+                <button class="tab-btn" data-tab="events">Upcoming Events</button>
+                <button class="tab-btn" data-tab="announcements">Announcements</button>
+            </div>
+
+            <div class="featured-news">
+                <div class="featured-image">
+                    <span class="featured-badge">Featured</span>
+                    <div class="image-placeholder">
+                        <i data-lucide="image"></i>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <span class="category-tag">Hospital News</span>
+                    <h2>MediCare Unveils New Cardiac Care Wing</h2>
+                    <p class="date"><i data-lucide="calendar"></i> February 10, 2026</p>
+                    <p>We're excited to announce the opening of our state-of-the-art cardiac care wing, featuring advanced catheterization labs and 50 private patient rooms designed for optimal recovery.</p>
+                    <button class="read-more-btn">Read Full Story</button>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card" data-category="news">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <span class="news-badge">News</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>MediCare Receives Excellence in Patient Safety Award</h3>
+                        <p class="date"><i data-lucide="calendar"></i> February 8, 2026</p>
+                        <p>Our hospital has been recognized by the National Healthcare Safety Network for outstanding patient safety performance...</p>
+                        <a href="#" class="read-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="events">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="calendar-check"></i>
+                        </div>
+                        <span class="news-badge events">Event</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Free Health Screening Event - March 15</h3>
+                        <p class="date"><i data-lucide="calendar"></i> Upcoming Event</p>
+                        <p>Join us for a free community health screening event featuring blood pressure checks, cholesterol testing, and health consultations...</p>
+                        <a href="#" class="read-link">Register Now →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="news">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="microscope"></i>
+                        </div>
+                        <span class="news-badge">News</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>New Research Study on Diabetes Prevention Begins</h3>
+                        <p class="date"><i data-lucide="calendar"></i> February 5, 2026</p>
+                        <p>MediCare's research team launches a groundbreaking 2-year study on lifestyle interventions for pre-diabetic patients...</p>
+                        <a href="#" class="read-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="announcements">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="bell"></i>
+                        </div>
+                        <span class="news-badge announcement">Announcement</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Updated Visitor Policy Effective February 15</h3>
+                        <p class="date"><i data-lucide="calendar"></i> February 3, 2026</p>
+                        <p>New visitor guidelines are being implemented to enhance patient safety and comfort. Each patient may have two designated visitors...</p>
+                        <a href="#" class="read-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="events">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <span class="news-badge events">Event</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Heart Health Awareness Month Activities</h3>
+                        <p class="date"><i data-lucide="calendar"></i> Throughout February 2026</p>
+                        <p>Join our series of educational workshops, cooking demonstrations, and fitness classes focused on cardiovascular health...</p>
+                        <a href="#" class="read-link">View Schedule →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="news">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <span class="news-badge">News</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Welcome to Our New Chief Medical Officer</h3>
+                        <p class="date"><i data-lucide="calendar"></i> February 1, 2026</p>
+                        <p>Dr. Jennifer Martinez joins MediCare as Chief Medical Officer, bringing 20 years of experience in healthcare leadership...</p>
+                        <a href="#" class="read-link">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="announcements">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <span class="news-badge announcement">Announcement</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>New Mobile App for Easier Appointment Scheduling</h3>
+                        <p class="date"><i data-lucide="calendar"></i> January 28, 2026</p>
+                        <p>Download our new mobile app to book appointments, view test results, and communicate with your care team on the go...</p>
+                        <a href="#" class="read-link">Download Now →</a>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="events">
+                    <div class="news-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="baby"></i>
+                        </div>
+                        <span class="news-badge events">Event</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>New Parent Classes - Register for March Sessions</h3>
+                        <p class="date"><i data-lucide="calendar"></i> March 2026</p>
+                        <p>Comprehensive prenatal classes covering labor, delivery, newborn care, and breastfeeding. Classes held every Saturday...</p>
+                        <a href="#" class="read-link">Register →</a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="upcoming-events-section">
+                <h2>Upcoming Events Calendar</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">5</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>CPR Training Workshop</h3>
+                            <p><i data-lucide="clock"></i> 2:00 PM - 4:00 PM</p>
+                            <p><i data-lucide="map-pin"></i> Community Education Center</p>
+                            <button class="register-btn">Register</button>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">12</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Women's Health Seminar</h3>
+                            <p><i data-lucide="clock"></i> 6:00 PM - 8:00 PM</p>
+                            <p><i data-lucide="map-pin"></i> Main Auditorium</p>
+                            <button class="register-btn">Register</button>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">15</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Free Community Health Screening</h3>
+                            <p><i data-lucide="clock"></i> 9:00 AM - 2:00 PM</p>
+                            <p><i data-lucide="map-pin"></i> Hospital Lobby</p>
+                            <button class="register-btn">Register</button>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">20</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Diabetes Management Class</h3>
+                            <p><i data-lucide="clock"></i> 10:00 AM - 12:00 PM</p>
+                            <p><i data-lucide="map-pin"></i> Education Room B</p>
+                            <button class="register-btn">Register</button>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">
+                            <span class="month">MAR</span>
+                            <span class="day">28</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Support Group: Cancer Survivors</h3>
+                            <p><i data-lucide="clock"></i> 5:00 PM - 6:30 PM</p>
+                            <p><i data-lucide="map-pin"></i> Conference Room A</p>
+                            <button class="register-btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="newsletter-signup">
+                <div class="newsletter-content">
+                    <i data-lucide="mail"></i>
+                    <h2>Stay Informed</h2>
+                    <p>Subscribe to receive the latest news and event updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-media">
+                <h2>Follow Us on Social Media</h2>
+                <div class="social-links">
+                    <a href="#" class="social-btn">
+                        <i data-lucide="facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i data-lucide="twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i data-lucide="instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-btn">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Script/navbar.js"></script>
+    <script src="../Script/news.js"></script>
+</body>
+</html>

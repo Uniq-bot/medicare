@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Testimonials - MediCare</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/testimonials.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="sidebar"></div>
+
+    <main class="testimonials-main">
+        <div class="testimonials-container">
+            <div class="hero-banner">
+                <h1>Patient Testimonials</h1>
+                <p>Real stories from real patients who trusted us with their care</p>
+            </div>
+
+            <div class="stats-overview">
+                <div class="stat-item">
+                    <i data-lucide="star"></i>
+                    <div class="stat-content">
+                        <h3>4.9/5</h3>
+                        <p>Average Rating</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i data-lucide="users"></i>
+                    <div class="stat-content">
+                        <h3>5,000+</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i data-lucide="award"></i>
+                    <div class="stat-content">
+                        <h3>98%</h3>
+                        <p>Satisfaction Rate</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i data-lucide="message-circle"></i>
+                    <div class="stat-content">
+                        <h3>2,500+</h3>
+                        <p>Reviews</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h2>Filter by Department</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="cardiology">Cardiology</button>
+                    <button class="filter-btn" data-filter="orthopedics">Orthopedics</button>
+                    <button class="filter-btn" data-filter="pediatrics">Pediatrics</button>
+                    <button class="filter-btn" data-filter="neurology">Neurology</button>
+                    <button class="filter-btn" data-filter="general">General Medicine</button>
+                </div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-category="cardiology">
+                    <div class="rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Dr. Smith saved my life. After my heart surgery, the care I received was exceptional. The entire cardiology team was professional, caring, and always available to answer my questions."</p>
+                    <div class="patient-info">
+                        <div class="patient-avatar">JD</div>
+                        <div class="patient-details">
+                            <h4>John Doe</h4>
+                            <span>Cardiology Patient</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span class="department-tag">Cardiology</span>
+                        <span class="date">January 2026</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="orthopedics">
+                    <div class="rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"I had knee replacement surgery and the results are amazing. I can walk without pain now. Thank you to Dr. Johnson and the entire orthopedic team!"</p>
+                    <div class="patient-info">
+                        <div class="patient-avatar">SM</div>
+                        <div class="patient-details">
+                            <h4>Sarah Miller</h4>
+                            <span>Orthopedics Patient</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span class="department-tag">Orthopedics</span>
+                        <span class="date">December 2025</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="pediatrics">
+                    <div class="rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"Dr. Emily was wonderful with my daughter. She made her feel comfortable and explained everything in a way a child could understand. Highly recommend!"</p>
+                    <div class="patient-info">
+                        <div class="patient-avatar">MJ</div>
+                        <div class="patient-details">
+                            <h4>Maria Johnson</h4>
+                            <span>Pediatrics Parent</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span class="department-tag">Pediatrics</span>
+                        <span class="date">January 2026</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="neurology">
+                    <div class="rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <p class="testimonial-text">"After suffering from chronic migraines, Dr. Wilson helped me find the right treatment. My quality of life has improved significantly."</p>
+                    <div class="patient-info">
+                        <div class="patient-avatar">RB</div>
+                        <div class="patient-details">
+                            <h4>Robert Brown</h4>
+                            <span>Neurology Patient</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span class="department-tag">Neurology</span>
+                        <span class="date">November 2025</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="general">
+                    <div class="rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"My family doctor here is amazing. Regular checkups are always thorough and I feel heard. The online appointment system is also very convenient."</p>
+                    <div class="patient-info">
+                        <div class="patient-avatar">LT</div>
+                        <div class="patient-details">
+                            <h4>Linda Taylor</h4>
+                            <span>General Medicine Patient</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span class="department-tag">General Medicine</span>
+                        <span class="date">January 2026</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="cardiology">
+                    <div class="rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="testimonial-text">"The cardiac rehabilitation program helped me recover faster than expected. The staff was supportive and motivating throughout my journey."</p>
+                    <div class="patient-info">
+                        <div class="patient-avatar">DW</div>
+                        <div class="patient-details">
+                            <h4>David Wilson</h4>
+                            <span>Cardiology Patient</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-meta">
+                        <span class="department-tag">Cardiology</span>
+                        <span class="date">October 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications-section">
+                <h2>Our Certifications & Awards</h2>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <i data-lucide="award"></i>
+                        <h3>JCI Accredited</h3>
+                        <p>Joint Commission International</p>
+                    </div>
+                    <div class="cert-card">
+                        <i data-lucide="shield-check"></i>
+                        <h3>ISO 9001:2015</h3>
+                        <p>Quality Management</p>
+                    </div>
+                    <div class="cert-card">
+                        <i data-lucide="trophy"></i>
+                        <h3>Best Hospital 2025</h3>
+                        <p>Healthcare Excellence Award</p>
+                    </div>
+                    <div class="cert-card">
+                        <i data-lucide="heart"></i>
+                        <h3>Patient Safety</h3>
+                        <p>Excellence Recognition</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Share Your Experience</h2>
+                <p>Your feedback helps us improve our services</p>
+                <button class="cta-button">Write a Review</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Script/navbar.js"></script>
+    <script src="../Script/testimonials.js"></script>
+</body>
+</html>

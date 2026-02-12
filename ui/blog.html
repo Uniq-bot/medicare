@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blog - MediCare</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="sidebar"></div>
+
+    <main class="blog-main">
+        <div class="blog-container">
+            <div class="hero-banner">
+                <h1>Health Blog & Tips</h1>
+                <p>Stay informed with the latest health news and wellness advice</p>
+            </div>
+
+            <div class="search-filter-section">
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                </div>
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">All Articles</button>
+                    <button class="category-btn" data-category="nutrition">Nutrition</button>
+                    <button class="category-btn" data-category="fitness">Fitness</button>
+                    <button class="category-btn" data-category="mental-health">Mental Health</button>
+                    <button class="category-btn" data-category="disease-prevention">Disease Prevention</button>
+                    <button class="category-btn" data-category="wellness">Wellness</button>
+                </div>
+            </div>
+
+            <div class="featured-post">
+                <div class="featured-image">
+                    <span class="featured-badge">Featured</span>
+                    <div class="image-placeholder">
+                        <i data-lucide="image"></i>
+                    </div>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="category-tag">Mental Health</span>
+                        <span class="read-time"><i data-lucide="clock"></i> 8 min read</span>
+                    </div>
+                    <h2>Understanding Mental Health in the Digital Age</h2>
+                    <p>Explore how technology affects our mental well-being and learn practical strategies to maintain balance in an increasingly connected world.</p>
+                    <div class="post-footer">
+                        <div class="author-info">
+                            <div class="author-avatar">DR</div>
+                            <div>
+                                <span class="author-name">Dr. Rachel Green</span>
+                                <span class="post-date">February 10, 2026</span>
+                            </div>
+                        </div>
+                        <button class="read-more-btn">Read Article</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card" data-category="nutrition">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="apple"></i>
+                        </div>
+                        <span class="category-badge">Nutrition</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="read-time"><i data-lucide="clock"></i> 5 min read</span>
+                            <span class="post-date">Feb 8, 2026</span>
+                        </div>
+                        <h3>10 Superfoods to Boost Your Immune System</h3>
+                        <p>Discover nutrient-rich foods that can help strengthen your body's natural defenses...</p>
+                        <div class="card-footer">
+                            <span class="author">Dr. James Liu</span>
+                            <button class="read-link">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="fitness">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="activity"></i>
+                        </div>
+                        <span class="category-badge">Fitness</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="read-time"><i data-lucide="clock"></i> 6 min read</span>
+                            <span class="post-date">Feb 6, 2026</span>
+                        </div>
+                        <h3>The Benefits of Morning Exercise Routines</h3>
+                        <p>Learn how starting your day with physical activity can transform your health...</p>
+                        <div class="card-footer">
+                            <span class="author">Dr. Sarah Chen</span>
+                            <button class="read-link">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="disease-prevention">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <span class="category-badge">Prevention</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="read-time"><i data-lucide="clock"></i> 7 min read</span>
+                            <span class="post-date">Feb 5, 2026</span>
+                        </div>
+                        <h3>Heart Disease Prevention: A Complete Guide</h3>
+                        <p>Essential strategies to protect your cardiovascular health and reduce risk factors...</p>
+                        <div class="card-footer">
+                            <span class="author">Dr. Michael Brown</span>
+                            <button class="read-link">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="wellness">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="sun"></i>
+                        </div>
+                        <span class="category-badge">Wellness</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="read-time"><i data-lucide="clock"></i> 4 min read</span>
+                            <span class="post-date">Feb 3, 2026</span>
+                        </div>
+                        <h3>Sleep Hygiene: Tips for Better Rest</h3>
+                        <p>Improve your sleep quality with evidence-based techniques and healthy habits...</p>
+                        <div class="card-footer">
+                            <span class="author">Dr. Emily White</span>
+                            <button class="read-link">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="mental-health">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <span class="category-badge">Mental Health</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="read-time"><i data-lucide="clock"></i> 6 min read</span>
+                            <span class="post-date">Feb 1, 2026</span>
+                        </div>
+                        <h3>Managing Stress in the Workplace</h3>
+                        <p>Practical techniques to reduce work-related stress and maintain mental wellness...</p>
+                        <div class="card-footer">
+                            <span class="author">Dr. David Martinez</span>
+                            <button class="read-link">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="nutrition">
+                    <div class="card-image">
+                        <div class="image-placeholder">
+                            <i data-lucide="salad"></i>
+                        </div>
+                        <span class="category-badge">Nutrition</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="post-meta">
+                            <span class="read-time"><i data-lucide="clock"></i> 5 min read</span>
+                            <span class="post-date">Jan 30, 2026</span>
+                        </div>
+                        <h3>Understanding Macronutrients and Their Role</h3>
+                        <p>A comprehensive guide to proteins, carbohydrates, and fats in your diet...</p>
+                        <div class="card-footer">
+                            <span class="author">Dr. Lisa Anderson</span>
+                            <button class="read-link">Read More →</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <i data-lucide="mail"></i>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get weekly health tips and articles delivered to your inbox</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Script/navbar.js"></script>
+    <script src="../Script/blog.js"></script>
+</body>
+</html>

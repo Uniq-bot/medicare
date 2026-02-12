@@ -48,6 +48,42 @@ sidebar.innerHTML = `
             <span class="icon"><i data-lucide="help-circle"></i></span>
             <span>FAQ</span>
         </a>
+        <a href="testimonials.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="star"></i></span>
+            <span>Testimonials</span>
+        </a>
+        <a href="blog.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="book-open"></i></span>
+            <span>Health Blog</span>
+        </a>
+        <a href="departments.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="building-2"></i></span>
+            <span>Departments</span>
+        </a>
+        <a href="insurance.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="shield-check"></i></span>
+            <span>Insurance</span>
+        </a>
+        <a href="careers.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="briefcase-business"></i></span>
+            <span>Careers</span>
+        </a>
+        <a href="research.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="microscope"></i></span>
+            <span>Research</span>
+        </a>
+        <a href="patient-resources.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="file-text"></i></span>
+            <span>Patient Resources</span>
+        </a>
+        <a href="emergency.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="siren"></i></span>
+            <span>Emergency</span>
+        </a>
+        <a href="news.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="newspaper"></i></span>
+            <span>News & Events</span>
+        </a>
     </nav>
 `;
 
