@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - MediCare</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
+</head>
+<body>
+    <aside id="sidebar" class="sidebar-hidden">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+
+    <main class="faq-main">
+        <div class="faq-container">
+            <div class="hero-banner">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about MediCare services</p>
+            </div>
+
+            <div class="search-section">
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="faqSearch" placeholder="Search for answers...">
+                </div>
+            </div>
+
+            <div class="faq-categories">
+                <button class="category-btn active" data-category="all">All Questions</button>
+                <button class="category-btn" data-category="general">General</button>
+                <button class="category-btn" data-category="appointments">Appointments</button>
+                <button class="category-btn" data-category="billing">Billing</button>
+                <button class="category-btn" data-category="technical">Technical</button>
+            </div>
+
+            <div class="faq-content">
+                <!-- General Questions -->
+                <section class="faq-section" data-category="general">
+                    <h2>General Questions</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What is MediCare?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>MediCare is a comprehensive healthcare management platform that connects patients with healthcare providers, enabling appointment scheduling, telemedicine consultations, health records management, and much more. We're dedicated to making healthcare more accessible and efficient.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I create an account?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Click on the "Get Started" button on our homepage, fill in your personal information, verify your email address, and complete your profile. The entire process takes less than 5 minutes.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is my personal health information secure?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely. We use enterprise-grade encryption and comply with HIPAA regulations to ensure your medical information is completely secure. We never share your data without your explicit consent.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What browsers are supported?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>MediCare works best on the latest versions of Chrome, Firefox, Safari, and Edge. We also have mobile apps available for iOS and Android devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Appointments Questions -->
+                <section class="faq-section" data-category="appointments">
+                    <h2>Appointments & Scheduling</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I book an appointment?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Log into your account, navigate to "Schedule Appointment", select your preferred doctor and specialty, choose an available time slot, and confirm. You'll receive an instant confirmation via email and SMS.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I cancel or reschedule an appointment?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, you can cancel or reschedule appointments up to 24 hours before the scheduled time through your dashboard. For urgent changes, please contact our support team.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What if I miss my appointment?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>If you miss an appointment without prior cancellation, a no-show fee may apply depending on your plan. We recommend setting up appointment reminders to avoid missing scheduled consultations.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do telemedicine appointments work?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Telemedicine appointments are conducted via secure video calls. You'll receive a link before your appointment time. Click the link, test your camera and microphone, and wait for your doctor to join. It's that simple!</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I choose a specific doctor?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! You can browse our directory of doctors, view their profiles, specialties, availability, and patient ratings, then select your preferred healthcare provider when booking.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Billing Questions -->
+                <section class="faq-section" data-category="billing">
+                    <h2>Billing & Payments</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What payment methods do you accept?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We accept all major credit cards (Visa, MasterCard, American Express), debit cards, PayPal, and health savings accounts (HSA). Payment is processed securely through our encrypted payment gateway.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Do you accept insurance?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we work with most major insurance providers. You can add your insurance information to your profile, and we'll verify coverage for each appointment. Some services may require co-pays.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How much do services cost?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Costs vary by service type and provider. Our Basic plan starts at $29/month, Premium at $79/month, and Family at $199/month. Individual consultation fees are displayed when booking. Insurance may cover some or all costs.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I get a refund?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Subscription fees are non-refundable, but you can cancel at any time. For appointment cancellations made within our policy timeframe, you'll receive a full refund within 5-7 business days.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Where can I view my billing history?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>All invoices and payment history are available in your dashboard under the "Billing" section. You can download receipts and invoices for your records or insurance reimbursement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Questions -->
+                <section class="faq-section" data-category="technical">
+                    <h2>Technical Support</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>I'm having trouble logging in. What should I do?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Try resetting your password using the "Forgot Password" link on the login page. If you continue to have issues, clear your browser cache and cookies, or try a different browser. Contact support if problems persist.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>The video call isn't working. How do I fix it?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Ensure your camera and microphone are enabled in browser settings, check your internet connection (minimum 2 Mbps required), close other applications using your camera, and try refreshing the page. You can also use our mobile app as an alternative.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I access MediCare on my mobile device?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! MediCare is fully responsive and works on mobile browsers. We also have dedicated apps available on the App Store and Google Play Store for an optimized mobile experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I update my profile information?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Log into your account, click on your profile icon, select "Profile Settings", make your changes, and click "Save". Some changes (like email address) may require verification.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Who do I contact for technical support?</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our technical support team is available 24/7. You can reach us via live chat in the app, email us at support@medicare.com, or call +1 (555) 123-4567. Average response time is under 2 hours.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="still-need-help">
+                <div class="help-card">
+                    <i data-lucide="help-circle"></i>
+                    <h2>Still Need Help?</h2>
+                    <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                    <div class="help-actions">
+                        <a href="contact.html" class="help-btn primary">
+                            <i data-lucide="mail"></i>
+                            Contact Support
+                        </a>
+                        <a href="#" class="help-btn secondary">
+                            <i data-lucide="message-circle"></i>
+                            Live Chat
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../Script/navbar.js"></script>
+    <script src="../Script/faq.js"></script>
+</body>
+</html>

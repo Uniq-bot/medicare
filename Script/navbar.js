@@ -27,6 +27,27 @@ sidebar.innerHTML = `
             <span class="icon"><i data-lucide="user"></i></span>
             <span>Profile</span>
         </a>
+        <div style="border-top: 1px solid #4a5a6a; margin: 1rem 0;"></div>
+        <a href="aboutus.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="info"></i></span>
+            <span>About Us</span>
+        </a>
+        <a href="services.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="briefcase"></i></span>
+            <span>Services</span>
+        </a>
+        <a href="portfolio.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="folder"></i></span>
+            <span>Portfolio</span>
+        </a>
+        <a href="contact.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="mail"></i></span>
+            <span>Contact</span>
+        </a>
+        <a href="faq.html" class="sidebar-link">
+            <span class="icon"><i data-lucide="help-circle"></i></span>
+            <span>FAQ</span>
+        </a>
     </nav>
 `;
 

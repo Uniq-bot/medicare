@@ -1,0 +1,129 @@
+/* Profile page styles */
+.profile-card {
+    border-radius: 0;
+    padding: 2rem;
+    width: 50vw;
+    margin: 0 auto;
+    min-height: calc(100vh - 6rem);
+}
+
+.profile-header {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e8e9ed;
+    margin-bottom: 2rem;
+}
+
+.profile-avatar {
+    margin: 0 auto 1rem;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar i {
+    width: 60px;
+    height: 60px;
+    color: white;
+}
+
+.profile-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.profile-header p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f5f6fa;
+    border-radius: 0;
+}
+
+.info-item i {
+    width: 24px;
+    height: 24px;
+    color: #4CAF50;
+}
+
+.info-item div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.info-item label {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    font-weight: 600;
+}
+
+.info-item span {
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.logout-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #e74c3c;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+}
+
+.logout-btn i {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-page main {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}

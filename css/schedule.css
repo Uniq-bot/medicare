@@ -1,0 +1,290 @@
+/* Schedule page styles */
+.schedule-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.schedule-container > h1 {
+    color: #2c3e50;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.doctor-info-section {
+    background: white;
+    border-radius: 0;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.1);
+}
+
+.doctor-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.doctor-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.doctor-text h2 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.doctor-text p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+
+.doctor-text p i {
+    width: 16px;
+    height: 16px;
+    color: #4CAF50;
+}
+
+.no-doctor {
+    text-align: center;
+    padding: 2rem;
+}
+
+.no-doctor i {
+    width: 48px;
+    height: 48px;
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.no-doctor p {
+    color: #7f8c8d;
+    font-size: 1rem;
+}
+
+.no-doctor a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.schedule-section {
+    background: white;
+    border-radius: 0;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.1);
+}
+
+.calendar-container {
+    margin-bottom: 2rem;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.calendar-header h2 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.nav-btn {
+    background: #f5f6fa;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #4CAF50;
+    color: white;
+}
+
+.nav-btn i {
+    width: 20px;
+    height: 20px;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.calendar-weekdays div {
+    text-align: center;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.85rem;
+    padding: 0.5rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f5f6fa;
+    color: #2c3e50;
+}
+
+.calendar-day:not(.empty):not(.disabled):hover {
+    background: #e8f5e9;
+    transform: scale(1.05);
+}
+
+.calendar-day.today {
+    background: #4CAF50;
+    color: white;
+    font-weight: 600;
+}
+
+.calendar-day.selected {
+    background: #2c3e50;
+    color: white;
+    font-weight: 600;
+}
+
+.calendar-day.disabled {
+    background: transparent;
+    color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.calendar-day.empty {
+    background: transparent;
+    cursor: default;
+}
+
+.time-slots-container {
+    margin-bottom: 2rem;
+}
+
+.time-slots-container h3 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.select-date-msg {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    padding: 2rem;
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid #e8e9ed;
+    background: white;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    color: #2c3e50;
+}
+
+.time-slot:hover {
+    border-color: #4CAF50;
+    background: #e8f5e9;
+}
+
+.time-slot.selected {
+    border-color: #4CAF50;
+    background: #4CAF50;
+    color: white;
+}
+
+.time-slot i {
+    width: 16px;
+    height: 16px;
+}
+
+.confirm-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.confirm-btn:hover:not(:disabled) {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.confirm-btn:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.confirm-btn i {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive for schedule */
+@media (max-width: 768px) {
+    .doctor-details {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .calendar-weekdays div {
+        font-size: 0.75rem;
+    }
+    
+    .calendar-day {
+        font-size: 0.8rem;
+    }
+    
+    .slots-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}

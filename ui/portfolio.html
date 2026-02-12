@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MediCare</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+</head>
+<body>
+    <aside id="sidebar" class="sidebar-hidden">
+        <!-- Sidebar content will be loaded here -->
+    </aside>
+
+    <main class="portfolio-main">
+        <div class="portfolio-container">
+            <div class="hero-banner">
+                <h1>Our Portfolio</h1>
+                <p>Showcasing Excellence in Healthcare Innovation</p>
+            </div>
+
+            <section class="filter-section">
+                <h2>Filter Projects</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="technology">Technology</button>
+                    <button class="filter-btn" data-filter="patient-care">Patient Care</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                </div>
+            </section>
+
+            <section class="projects-section">
+                <div class="projects-grid">
+                    <div class="project-card" data-category="technology">
+                        <div class="project-image">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Mobile Health App</h3>
+                            <p class="project-category">Technology</p>
+                            <p>Developed a comprehensive mobile application enabling patients to manage appointments, access health records, and consult with doctors remotely.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="users"></i> 25,000+ users</span>
+                                <span><i data-lucide="star"></i> 4.8 rating</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Healthcare</span>
+                                <span class="tag">Mobile</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="patient-care">
+                        <div class="project-image">
+                            <i data-lucide="heart-pulse"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>24/7 Virtual Care Platform</h3>
+                            <p class="project-category">Patient Care</p>
+                            <p>Implemented round-the-clock virtual consultation services, reducing ER visits by 30% and improving patient satisfaction scores.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="clock"></i> 24/7 available</span>
+                                <span><i data-lucide="activity"></i> 15,000+ consultations</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Telemedicine</span>
+                                <span class="tag">Emergency Care</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="technology">
+                        <div class="project-image">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Diagnostic Assistant</h3>
+                            <p class="project-category">Technology</p>
+                            <p>Developed an AI-powered system to assist doctors in diagnosing complex conditions with 95% accuracy, reducing diagnosis time by 40%.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="target"></i> 95% accuracy</span>
+                                <span><i data-lucide="trending-up"></i> 40% faster</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Diagnostics</span>
+                                <span class="tag">Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="research">
+                        <div class="project-image">
+                            <i data-lucide="microscope"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Clinical Research Database</h3>
+                            <p class="project-category">Research</p>
+                            <p>Built a comprehensive database system for managing clinical trials, participant data, and research findings across multiple facilities.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="database"></i> 50+ trials</span>
+                                <span><i data-lucide="users"></i> 5,000+ participants</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Research</span>
+                                <span class="tag">Data Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="infrastructure">
+                        <div class="project-image">
+                            <i data-lucide="building-2"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Smart Hospital Infrastructure</h3>
+                            <p class="project-category">Infrastructure</p>
+                            <p>Modernized hospital infrastructure with IoT sensors, automated systems, and real-time monitoring for improved operational efficiency.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="zap"></i> 35% efficiency gain</span>
+                                <span><i data-lucide="shield"></i> Enhanced security</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="patient-care">
+                        <div class="project-image">
+                            <i data-lucide="clipboard-list"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Patient Portal System</h3>
+                            <p class="project-category">Patient Care</p>
+                            <p>Created an intuitive patient portal for accessing medical records, lab results, and communicating with healthcare providers securely.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="users"></i> 40,000+ patients</span>
+                                <span><i data-lucide="check-circle"></i> 92% satisfaction</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Patient Portal</span>
+                                <span class="tag">Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="technology">
+                        <div class="project-image">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Security Framework</h3>
+                            <p class="project-category">Technology</p>
+                            <p>Implemented enterprise-grade security protocols ensuring HIPAA compliance and protecting sensitive patient information.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="lock"></i> Zero breaches</span>
+                                <span><i data-lucide="award"></i> HIPAA certified</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Security</span>
+                                <span class="tag">Compliance</span>
+                                <span class="tag">Encryption</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="research">
+                        <div class="project-image">
+                            <i data-lucide="bar-chart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Healthcare Analytics Platform</h3>
+                            <p class="project-category">Research</p>
+                            <p>Developed advanced analytics tools for tracking health trends, treatment outcomes, and operational metrics across the network.</p>
+                            <div class="project-stats">
+                                <span><i data-lucide="trending-up"></i> Real-time insights</span>
+                                <span><i data-lucide="pie-chart"></i> 100+ metrics</span>
+                            </div>
+                            <div class="project-tags">
+                                <span class="tag">Analytics</span>
+                                <span class="tag">Business Intelligence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements-section">
+                <h2>Our Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i data-lucide="award"></i>
+                        <h3>Healthcare Innovation Award 2025</h3>
+                        <p>Recognized for outstanding contribution to digital healthcare transformation</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i data-lucide="trophy"></i>
+                        <h3>Best Patient Care Platform</h3>
+                        <p>Awarded for excellence in patient experience and care delivery</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i data-lucide="star"></i>
+                        <h3>Top Rated Healthcare App</h3>
+                        <p>Highest rated healthcare management platform by users</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i data-lucide="medal"></i>
+                        <h3>Security Excellence Award</h3>
+                        <p>Certified for implementing industry-leading security standards</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../Script/navbar.js"></script>
+    <script src="../Script/portfolio.js"></script>
+</body>
+</html>
